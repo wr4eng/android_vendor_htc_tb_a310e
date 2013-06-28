@@ -1,6 +1,5 @@
 ThinkingBridge
-===========
-
+---------------
 
 Getting Started
 ---------------
@@ -16,25 +15,19 @@ Then to sync up:
 
     repo sync
 
-Building (Only for Pico)
+Building A310e
 ------------------------
+Go -- hardware/qcom/ and delete the legacy folders
 
-Place the vendor blobs from here-- https://github.com/7alvi/ics-vendor-pico
-In vendor/htc/pico/ (create the directories)
-
-Go to hardware/qcom/ and delete the legacy folders
-
-Download display-legacy from here-- https://github.com/7alvi/android_hardware_qcom_display-legacy-1
+Display-legacy from here-- https://github.com/wr4eng/android_hardware_qcom_display-legacy
 Place it in hardware/qcom/
 rename the folder as display-legacy
 
---------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------
+------------------------
 
-Run
+Build Run
 
-. build/envsetup.sh
+	. build/envsetup.sh
 
-Run
+	brunch thinkingbridge_pico-userdebug -j3
 
-brunch thinkingbridge_pico-userdebug -j3
